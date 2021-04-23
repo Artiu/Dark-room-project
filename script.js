@@ -16,7 +16,6 @@ function scroll_animation()
                 duration:1500
             });
             scrolled=true;
-            console.log(scrolled);
         }
         if(bottomWindow>=zarzad.offsetTop && scrolled2==false)
         {
@@ -28,6 +27,5 @@ function scroll_animation()
                 duration:1500
             });
             scrolled2=true;
-            console.log(scrolled2);
         }
 }
