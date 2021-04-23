@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    font-family: 'Fira Code', monospace;
+}
+#nav
+{
+    width:100%;
+    color:white;
+    text-align:center;
+}
+#content
+{
+    animation-name:opacityA;
+    animation-duration: 2s;
+    width:100vw;
+    height:100vh;
+    background: url(img/logo.jpg);
+    background-size: cover;
+}
+#content h1
+{
+    position:relative;
+    display:block;
+    text-align:center;
+    top:20vh;
+    color:white; 
+}
+#content img
+{
+    width:40px;
+    height:40px;
+}
+#server
+{
+    position:absolute;
+    top:83%;
+    left:50%;
+    transform:translate(-50%,0);
+    width:150px;
+    background-color:#7289da;
+    border-radius:5px;
+}
+#server span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left:10px;
+}
+a
+{
+    text-decoration:none;
+    color:#333;    
+}
+#go_down
+{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+::-webkit-scrollbar
+{
+    width:8px;
+    background:none;
+}
+::-webkit-scrollbar-thumb
+{
+    background:#333;
+    border-radius:5px;
+}
+::-webkit-scrollbar-track
+{
+    background:none;
+}
+#zarzad
+{
+    position:relative;
+    width:100%;
+    padding:1% 0;
+    background-color: #5e1e69;/*#100a3a*/
+}
+h2
+{
+    text-align:center;
+}
+.zarzad_box
+{
+    width:20%;
+    border-radius:20px;
+    text-align:center;
+    padding:3px;
+    background-color:#aa304a;/*#802280*/
+}
+.zarzad_box img
+{
+    width:128px;
+    height:128px;
+}
+.zarzad_box #owner::after
+{
+    margin-left:3px;
+    content:url(img/korona.png);
+}
+#footer
+{
+    background-color:black;
+    color:white;
+}
+#info
+{
+    background-color:#180c3c;
+    color:#B7baba;
+    padding:1% 0;
+}
+#info_p
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#info span
+{
+    width:30%;
+    border-right:3px solid black;
+    height:50%;
+    padding:10px;
+}
+#zarzad_p
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media (max-width:800px)
+{
+    #info span
+    {
+        display:block;
+        width:100%;
+    }
+    .zarzad_box
+    {
+        border:0;
+        border-radius: 0;
+        width:100%;
+    }
+    #zarzad_p
+    {
+        display:block;
+    }
+    #zarzad
+    {
+        background-color: #491752;
+    }
+    #info_p
+    {
+        display:block;
+    }
+}
+@keyframes opacityA
+{
+    from
+    {
+        opacity:0.5;
+    }
+    to
+    {
+        opacity:1;
+    }   
+}
