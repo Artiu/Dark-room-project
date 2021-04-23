@@ -15,8 +15,6 @@
 }
 #content
 {
-    animation-name:opacityA;
-    animation-duration: 2s;
     width:100vw;
     height:100vh;
     background: url(img/logo.jpg);
@@ -163,15 +161,4 @@ h2
     {
         display:block;
     }
-}
-@keyframes opacityA
-{
-    from
-    {
-        opacity:0.5;
-    }
-    to
-    {
-        opacity:1;
-    }   
 }
